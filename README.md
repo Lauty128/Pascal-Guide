@@ -3,7 +3,7 @@
 This is a structured language, so pascal uses a **strict** way of work. 
 
 
-## ESTRUCTURE
+## STRUCTURE
 
 Now let's see at the pascal structure
 ```pascal
@@ -15,12 +15,12 @@ Uses
 Type
     { data type list };
 
-Procedure name();
+Procedure name( { parameters} );
 Begin
     //procedure's code
 End;
 
-Function name():type;
+Function name( { parameters} ):type;
 Begin
     //function's code
 End;
@@ -41,7 +41,7 @@ End.
 
 ### **Var**
 The variables are used to store data inside a program.\
-let's see an example:
+Let's see an example:
 
 ```pascal
 Var nombre:String;  // Variable of type String
@@ -49,21 +49,21 @@ Var nombre:String;  // Variable of type String
 ```
 
  Are declared as follows.\
- you can declare more than one variable of the same type in a line of code, separating each variable with a ","
+ You can declare more than one variable of the same Type in a line of code, separating each variable with a ","
 
 ```pascal
 Var nombre,apellido,localidad:String;  
 ```
 
 ### **Assignments**
-you can assign a value to the variable when you declared it 
+You can assign a value to the variable when you declared it 
 ```pascal
 Var edad:Integer = 5;  
 ```
-> This only works with global variables, no with local variables
+> This only works with global variables
 
 ### **Type**
-This is mainly used to declared arrays and records.
+This is mainly used to declare arrays and records.
 ```pascal
 Type
   dias = array[1..7] of Integer;
@@ -73,7 +73,7 @@ Type
     autor: String;
 
 ```
-> Are declared differently from the variables 
+> Are declared differently from the variables (=)
 
 then, to call it we do the following
 ```pascal
@@ -81,3 +81,24 @@ Var
     variable1:dias;
     variable2:libros;
 ```
+
+
+## COMMENTS
+There are 3 ways to write a comment 
+```pascal
+    { comment one }
+    (* comment two *)
+    // comment three
+```
+> The last comment uses the whole line. From "//" onwards 
+
+## INPUT/OUTPUT
+To handle pascal inputs and outputs we use two functions 
+```pascal
+    Readln({Var})  
+    //The program allows you to write the value of the variable
+
+    WriteLn({text or Var}) 
+    //The program prints the variable or text on the screen
+```
+> you must use the corresponding data type in each case
