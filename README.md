@@ -17,12 +17,12 @@ Type
 
 Procedure name( { parameters} );
 Begin
-    //procedure's code
+    //code of the procedure 
 End;
 
 Function name( { parameters} ):type;
 Begin
-    //function's code
+    //code of the function
 End;
 
 Var
@@ -102,3 +102,48 @@ To handle pascal inputs and outputs we use two functions
     //The program prints the variable or text on the screen
 ```
 > you must use the corresponding data type in each case
+
+## TYPES OF DATA
+There are several types of data, but let's see the most basic ones
+
+| Type        | Example
+|-------------|----------
+| **Integer** | 5
+| **Real**    | 3.45
+| **String**  | 'text string'
+| **Char**    | 'h'
+| **Boolean** | *true* or *false* 
+
+## OPERATORS
+
+### **Relational**
+
+| Meaning      | Operator |      
+|--------------|----------|      
+| Mayor        |    >     |      
+| Menor        |    <     |      
+| Igual        |    =     |      
+| Menor o Igual|    <=    |      
+| Mayor o Igual|    >=    |      
+| Distinto     |    <>    |      
+
+### **Logics**
+| Meaning      | Operator |      
+|--------------|----------|      
+| And          | **and**  |      
+| Or           | **or**   |      
+| Not          | **not**  |
+
+**and**: both operators must be complied\
+**or**: at least one must be complied \
+**not**: inverts the value of the operator
+
+### **Mathematicians**
+| Meaning          | Operator | Parameters    |
+|------------------|----------|---------------|  
+| Sum              | +        | Real, Integer |
+| Subtract         | -        | Real, Integer |
+| Multiply         | *        | Real, Integer |
+| Division         | /        | Real, Integer |
+| Integer Division | **div**  | Integer       |
+| Module           | **mod**  | Integer       |
