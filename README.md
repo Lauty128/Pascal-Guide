@@ -147,3 +147,51 @@ There are several types of data, but let's see the most basic ones
 | Division         | /        | Real, Integer |
 | Integer Division | **div**  | Integer       |
 | Module           | **mod**  | Integer       |
+
+## CONDITIONALS
+```pascal
+    if(logical expression) then
+        Begin
+            // Code A
+        End
+    else
+        Begin
+            // Code B
+        End;
+```
+if the logical expression is true, then it will execute the code A, else the code B
+>* if the condicional does not end, then you must not put ";" at the finish
+>* if the code is one line, then it isn't required the **begin** and **end**
+```pascal
+    if(logical expression) then
+        // one line code
+    else
+        Begin
+            // Code
+        End;
+```
+
+## SENTENCE **FOR**
+allows us to repeat a code as many times as we want
+```pascal
+    for {var}:=initial-value to final-value do
+      Begin
+        // Code
+      End;
+```
+we can put that the variable "i" starts at 1 and ends at 5.
+Then the code is repeat until all laps are completed
+
+## POCEDURES & FUNCTIONS
+A function is equal to a procedure. the only diffence is that a function returns a simple value
+### **Procedure**
+```pascal
+    Procedure name({var}:{type}; {var}:{type});
+    var {local-var}:{type};
+      Begin
+        // Code
+      End;
+```
+>* first go the parameters with their data type
+>* after, if you want to use local variables, we use "Var" to declare them 
+>* if the parameter contains the word "var" before its name, then the global variable enters as a reference
