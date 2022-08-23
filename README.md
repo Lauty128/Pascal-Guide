@@ -171,7 +171,7 @@ if the logical expression is true, then it will execute the code A, else the cod
         End;
 ```
 
-## SENTENCE **FOR**
+### **SENTENCE FOR**
 allows us to repeat a code as many times as we want
 ```pascal
     for {var}:=initial-value to final-value do
@@ -181,6 +181,15 @@ allows us to repeat a code as many times as we want
 ```
 we can put that the variable "i" starts at 1 and ends at 5.
 Then the code is repeat until all laps are completed
+
+### **WHILE**
+With this we can repeat a block of code as many times as we want, as long as the condition is met.
+```pascal
+    While { condition } Do
+      Begin
+        // Code
+      End;
+```
 
 ## POCEDURES & FUNCTIONS
 A function is equal to a procedure. the only diffence is that a function returns a simple value
@@ -192,6 +201,20 @@ A function is equal to a procedure. the only diffence is that a function returns
         // Code
       End;
 ```
->* first go the parameters with their data type
+>* first goes the parameters with their data type
 >* after, if you want to use local variables, we use "Var" to declare them 
 >* if the parameter contains the word "var" before its name, then the global variable enters as a reference
+
+### **Function**
+This is very similar to the procedure, with the difference that the function return something.
+```pascal
+    Function name({var}:{type}; {var}:{type}):type;
+    var {local-var}:{type};
+      Begin
+        // Code
+        name:= { something of the specified data type } ;
+      End;
+```
+>* No parameter enters as reference
+>* At the end we must put a value to the function { ``` name:= ``` }
+>* the function value must be of the specified data type
