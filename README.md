@@ -202,7 +202,7 @@ A function is equal to a procedure. the only diffence is that a function returns
       End;
 ```
 >* first goes the parameters with their data type
->* after, if you want to use local variables, we use "Var" to declare them 
+>* after, if you want to use local variables, we use ```var``` to declare them 
 >* if the parameter contains the word "var" before its name, then the global variable enters as a reference
 
 ### **Function**
@@ -218,3 +218,45 @@ This is very similar to the procedure, with the difference that the function ret
 >* No parameter enters as reference
 >* At the end we must put a value to the function { ``` name:= ``` }
 >* the function value must be of the specified data type
+
+
+## Records & Arrays
+Together, these are used to store data and keep them organized.
+it Is recommended to declare them in ```Type```
+```pascal
+  Type
+    registro= Record
+      nombre:String;
+      edad:Integer;
+      localidad:String;
+    End;
+    arreglo= Array[1..5] of registro;
+```
+>* Remember that **types** are declared with  ```=```
+>* the array goes from **1** to **5** and is of type ```registro```
+
+### **Call them in the main program**
+To do so, they must be declared in ```Var``` and later in the main program
+```pascal
+  Var
+    datos: arreglo;
+    i:Integer;
+
+  Begin
+    For i:=1 to 5 do
+    Begin
+      Readln(datos[i].nombre); //String
+      Readln(datos[i].edad); //Integer
+      Readln(datos[i].localidad); //String
+    End;
+
+    //Writeln(datos)
+    //Writeln(datos[1])
+    Writeln(datos[1].nombre)
+
+  End.
+```
+>* Those ```Writeln()``` commented cannot be executed by Pascal. Must be printed in this way - **One by one**
+>* Variables must be declared with  ```:```
+
+This program, loads ```datos``` and the records it contains
