@@ -66,11 +66,12 @@ Var edad:Integer = 5;
 This is mainly used to declare arrays and records.
 ```pascal
 Type
-  dias = array[1..7] of Integer;
   libros = record
     id: Integer;
     titulo: String;
     autor: String;
+  End;
+  dias = array[1..7] of Integer;
 
 ```
 > Are declared differently from the variables (=)
